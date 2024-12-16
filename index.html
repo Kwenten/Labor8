@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Одностраничный сайт с адаптивным дизайном и API.">
+    <title>Одностраничный сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на сайт восьмой лабораторной работы!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О сайте</h2>
+            <p>Сайт для восьмой лабораторной работы</p>
+        </section>
+
+        <section id="services">
+            <h2>Просьбы:</h2>
+            <ul>
+              <li>Поставьте</li>
+              <li>Пожалуйста</li>
+              <li>Зачет</li>
+          </ul>
+            <div id="service-list"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Связаться с нами</h2>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="response-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Пример сайта. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
